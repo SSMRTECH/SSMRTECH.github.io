@@ -62,14 +62,28 @@ export const customersSection = {
 };
 
 /**
- * Customer placeholders. To use a real logo, drop the file in /public/customers
- * and set `logo: "/customers/name.svg"`. `href` is optional.
+ * Clients. Logos live in /public/customers. `logo` and `href` are optional;
+ * without a logo the name renders as a wordmark.
  */
 export const customers: { name: string; logo?: string; href?: string }[] = [
-  { name: "robotic.com" },
-  { name: "BLEtech.com" },
-  { name: "N-warehouse.com" },
+  { name: "bEarly Technovations", logo: "/customers/bearly.png", href: "https://bearlytech.com/" },
+  { name: "NWarehouse", logo: "/customers/nwarehouse.png", href: "http://n-warehouse.com/" },
+  { name: "Crobot Technologies", logo: "/customers/crobot.png", href: "https://crobottech.com/" },
+  { name: "CookInCloud", logo: "/customers/cookincloud.jpg", href: "https://www.cookincloud.com/" },
 ];
+
+/**
+ * DRAFT: confirm the wording with the client and fill in the real person's name
+ * before deploying. Set `name` to show it above the role; leave empty to show role only.
+ */
+export const testimonial = {
+  quote:
+    "SSMR Tech took our idea from a rough concept to a working connected product. Their team understood the hardware, the firmware and the cloud side equally well, and they were a genuine engineering partner throughout.",
+  name: "",
+  role: "CEO",
+  company: "bEarly Technovations",
+  logo: "/customers/bearly.png",
+};
 
 export const about = {
   title: "Built for Ideas That Connect.",
